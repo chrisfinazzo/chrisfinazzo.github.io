@@ -1,10 +1,1 @@
-body {
-  margin: 40px auto;
-  max-width: 650px;
-  line-height: 1.6;
-  font-size: 18px;
-  color: #663399;
-  padding: 0 10px; }
-
-h1, h2, h3 {
-  line-height: 1.2; }
+body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}.name{font-size:32px}.about,.criteria{text-transform:capitalize}.social ul{list-style-type:none;text-align:center}.social ul li{display:inline}.social ul li a{text-decoration:none}.rights{text-align:center}
