@@ -1,3 +1,4 @@
+@import "fonts";
 @import "variables";
 
 body {
@@ -13,27 +14,46 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-.name {
-  font-size: $masthead-type;
+p {
+  font-family: "Source Serif Pro";
 }
 
-.about, .criteria {
-  text-transform: capitalize;
-}
-
-.social ul {
-  list-style-type: $no-list;
-  text-align: center;
-}
-
-.social ul li {
-  display: inline;
-}
-
-.social ul li a {
+a:link, a:visited, a:hover, a:active {
+  color: $rebeccapurple;
   text-decoration: $no-underlines;
 }
 
-.rights {
+ul li {
+  font-family: "Source Sans Pro";
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+#name {
+	font-size: $masthead-type;
+	font-family: "Source Serif Pro";
+	white-space: nowrap;
+}
+
+#about, #skills, #criteria, #requirements, #work, #contact {
+  text-transform: capitalize;
+}
+
+#mail {
+  font-family: "Source Sans Pro";
+  text-decoration: $no-underlines;
+}
+
+#social {
   text-align: center;
+}
+
+#rights {
+  text-align: center;
+  font-family: "Source Sans Pro";
 }
