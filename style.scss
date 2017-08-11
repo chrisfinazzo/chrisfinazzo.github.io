@@ -34,6 +34,10 @@ hr {
   border-top: 1px solid #eee;
 }
 
+img {
+  max-width: 100%;
+}
+
 #name {
 	font-size: $masthead-type;
 	font-family: "Source Serif Pro";
@@ -49,11 +53,28 @@ hr {
   text-decoration: $no-underlines;
 }
 
+#intro {
+  display: inline-block;
+  float: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+
+#img-container {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 100%;
+}
+
 #social {
   text-align: center;
+  clear: both;
 }
 
 #rights {
   text-align: center;
+  clear: both;
   font-family: "Source Sans Pro";
 }
