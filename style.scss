@@ -18,9 +18,20 @@ p {
   font-family: "Source Serif Pro";
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: $rebeccapurple;
+a:link, a:hover, a:active {
   text-decoration: $no-underlines;
+}
+
+a:visited {
+  color: $rebeccapurple;
+}
+
+.fa.fa-twitter.fa-2x {
+  color: #1DA1F2;
+}
+
+.fa.fa-github.fa-2x {
+  color: #333;
 }
 
 ul li {
