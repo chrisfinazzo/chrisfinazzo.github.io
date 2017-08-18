@@ -17,7 +17,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-family: Source Serif Pro, serif;
+  font-family: $serif-stack;
 }
 
 a:link, a:hover, a:active {
@@ -41,7 +41,7 @@ a:visited {
 }
 
 ul li {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: $sans-stack;
 }
 
 hr {
@@ -57,7 +57,7 @@ img {
 
 #name {
 	font-size: $masthead-type;
-	font-family: Source Serif Pro, serif;
+	font-family: $serif-stack;
 	white-space: nowrap;
 }
 
@@ -66,7 +66,7 @@ img {
 }
 
 #mail {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: $sans-stack;
   text-decoration: $no-underlines;
 }
 
@@ -92,5 +92,5 @@ img {
 #rights {
   text-align: center;
   clear: both;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: $sans-stack;
 }
