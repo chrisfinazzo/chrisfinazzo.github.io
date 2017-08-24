@@ -12,6 +12,21 @@ body {
   padding: 0 10px;
 }
 
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+h1 {
+  padding: 0;
+  margin: 0 10px 20px;
+}
+
 h1, h2, h3 {
   line-height: 1.2;
 }
@@ -56,9 +71,9 @@ img {
 }
 
 #name {
-	font-size: $masthead-type;
-	font-family: $serif-stack;
-	white-space: nowrap;
+  font-size: $masthead-type;
+  font-family: $serif-stack;
+  white-space: nowrap;
 }
 
 #about, #skills, #criteria, #requirements, #work, #contact {
@@ -68,6 +83,10 @@ img {
 #mail {
   font-family: $sans-stack;
   text-decoration: $no-underlines;
+}
+
+#wrapper {
+  background: #EEEEEE;
 }
 
 #intro {
@@ -82,7 +101,7 @@ img {
   height: 250px;
   float: left;
   margin: 30px;
-	border-radius: 150px;
+  border-radius: 150px;
 }
 
 #social {
