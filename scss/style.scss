@@ -8,7 +8,7 @@ body {
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
-  color: hsl(0, 0%, 27%);
+  color: hsl(0, 0%, 93%);
   padding: 0 10px;
 }
 
@@ -85,9 +85,7 @@ img {
   text-decoration: $no-underlines;
 }
 
-#wrapper {
-  background: #EEEEEE;
-}
+#wrapper {}
 
 #intro {
   float: right;
