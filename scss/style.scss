@@ -71,17 +71,17 @@ img {
 }
 
 #intro {
-  display: inline-block;
   float: right;
   padding-right: 15px;
-  padding-left: 15px;
-  
+  margin-left: 25px;  
 }
 
-#img-container {
+#me {
   width: 250px;
-  margin: 0 auto;
-  text-align: center;
+  height: 250px;
+  float: left;
+  margin: 30px;
+	border-radius: 150px;
 }
 
 #social {
