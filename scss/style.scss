@@ -55,6 +55,10 @@ a:visited {
   color: hsl(0, 0%, 20%);
 }
 
+ul {
+  list-style-type: none;
+}
+
 ul li {
   font-family: $sans-stack;
 }
@@ -106,9 +110,10 @@ img {
   border-radius: 150px;
 }
 
-#social {
-  text-align: center;
-  clear: both;
+#social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 #rights {
