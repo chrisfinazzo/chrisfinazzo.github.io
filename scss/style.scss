@@ -12,16 +12,6 @@ body {
   padding: 0 10px;
 }
 
-.clear:before,
-.clear:after {
-  content: "";
-  display: table;
-}
-
-.clear:after {
-  clear: both;
-}
-
 h1 {
   padding: 0;
   margin: 0 10px 20px;
@@ -93,31 +83,24 @@ img {
   text-decoration: $no-underlines;
 }
 
-#wrapper {}
-
-#intro {
-  float: right;
-  padding-right: 15px;
-  margin-left: 25px;
-  text-align: left;
-}
-
-#me {
-  width: 250px;
-  height: 250px;
-  float: left;
-  margin: 30px;
-  border-radius: 150px;
-}
-
-#social-grid {
+.content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.25rem;
 }
 
-#rights {
+.me {
+  border-radius: 50%;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.15rem;
   text-align: center;
-  clear: both;
+}
+
+.rights {
+  text-align: center;
   font-family: $sans-stack;
 }
