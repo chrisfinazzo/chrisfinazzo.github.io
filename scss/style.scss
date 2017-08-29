@@ -1,11 +1,12 @@
 @charset 'utf-8';
 
 @import 'fonts';
+@import 'queries';
 @import 'variables';
 
 body {
   margin: 40px auto;
-  max-width: 650px;
+  max-width: 725px;
   line-height: 1.6;
   font-size: 18px;
   background-color: hsl(0, 0%, 93%);
@@ -83,23 +84,6 @@ img {
 #mail {
   font-family: $sans-stack;
   text-decoration: $no-underlines;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1.25rem;
-}
-
-.me {
-  border-radius: 50%;
-}
-
-.social {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 0.15rem;
-  text-align: center;
 }
 
 .rights {
