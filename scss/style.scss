@@ -82,6 +82,10 @@ img {
   text-transform: capitalize;
 }
 
+#who, #what, #where {
+  font-weight: bold;
+}
+
 #mail {
   font-family: $sans-stack;
   text-decoration: $no-underlines;
