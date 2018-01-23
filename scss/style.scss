@@ -1,7 +1,6 @@
 @charset 'utf-8';
 
 @import 'fonts';
-@import 'queries';
 @import 'variables';
 
 body {
@@ -95,3 +94,41 @@ img {
   text-align: center;
   font-family: $sans-stack;
 }
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.25rem;
+  }
+
+  .me {
+    border-radius: 100%;
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .intro {
+    grid-row: 2;
+  }
+
+  #social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.15rem;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .fa.fa-github.fa-2x {
+    grid-column: 1;
+  }
+  
+  .fa.fa-linkedin.fa-2x {
+    grid-column: 2;
+  }
+  
+  .fa.fa-twitter.fa-2x {
+    grid-column: 3;
+  }
+
+@import 'queries';
