@@ -23,6 +23,11 @@
   font-size: 40px;
 }
 
+#name {
+  font-size: 28px;
+  white-space: wrap;
+}
+
 #social {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

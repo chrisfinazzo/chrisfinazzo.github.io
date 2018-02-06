@@ -71,7 +71,7 @@ img {
 #name {
   font-size: 32px;
   font-family: "Source Serif Pro", serif;
-  white-space: nowrap; }
+  white-space: wrap; }
 
 #about, #skills, #criteria, #requirements, #work, #contact {
   text-transform: capitalize; }
@@ -135,6 +135,10 @@ img {
 
   .hi {
     font-size: 40px; }
+
+  #name {
+    font-size: 28px;
+    white-space: wrap; }
 
   #social {
     display: grid;

@@ -75,7 +75,7 @@ img {
 #name {
   font-size: $masthead-type;
   font-family: $serif-stack;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 #about, #skills, #criteria, #requirements, #work, #contact {
