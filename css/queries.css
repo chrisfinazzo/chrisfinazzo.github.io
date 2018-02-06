@@ -15,6 +15,9 @@
     grid-row: 1;
     text-align: left; }
 
+  .hi {
+    font-size: 40px; }
+
   #social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,5 +33,3 @@
 
   .fa.fa-twitter.fa-2x {
     grid-column: 3; } }
-
-/*# sourceMappingURL=queries.css.map */

@@ -64,8 +64,9 @@ img {
 
 .hi {
   font-family: 'Merriweather';
+  font-size: 36px;
   text-align: center;
-  white-space: nowrap; }
+  white-space: wrap; }
 
 #name {
   font-size: 32px;
@@ -132,6 +133,9 @@ img {
     grid-row: 1;
     text-align: left; }
 
+  .hi {
+    font-size: 40px; }
+
   #social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -147,5 +151,3 @@ img {
 
   .fa.fa-twitter.fa-2x {
     grid-column: 3; } }
-
-/*# sourceMappingURL=style.css.map */
