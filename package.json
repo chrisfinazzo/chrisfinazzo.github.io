@@ -1,0 +1,24 @@
+{
+  "name": "rjp",
+  "version": "1.0.0",
+  "description": "Reverse Job Posting microsite",
+  "keywords": [
+    "microsite",
+    "resume",
+    "reverse job posting"
+  ],
+  "homepage": "https://github.com/chrisfinazzo/chrisfinazzo.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisfinazzo/chrisfinazzo.github.io.git"
+  },
+  "author": {
+    "name": "Chris Finazzo",
+    "url": "https://www.chrisfinazzo.com/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "workbox-build": "^3.0.0"
+  }
+}

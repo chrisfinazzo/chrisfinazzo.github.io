@@ -31,5 +31,12 @@
   <li><a href="https://twitter.com/chrisfinazzo"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
   </ul>
   <div id="rights">&copy; 2018 Chris Finazzo</div>
+  <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>
