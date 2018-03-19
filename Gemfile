@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem 'sass', '3.4.19'
+gem 'sass', '3.5.1'
