@@ -25,11 +25,11 @@ self.__precacheManifest = [
   },
   {
     "url": "css/queries.css",
-    "revision": "e462b3cdee5ee333794c13f53fb20dac"
+    "revision": "40978b5f16120449296a671d982e9ced"
   },
   {
     "url": "css/style.css",
-    "revision": "9b3d02ad45d3d7b875396be54e0c900c"
+    "revision": "af731bd5bd71f6e54ac9666e2052acf4"
   },
   {
     "url": "css/variables.css",
@@ -41,7 +41,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "da48e4db16124c0a6d32773c4f3f1203"
+    "revision": "1bac5c2f64d15dedac26b869eb8d10c1"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "c90f5d618e24ae10be3560f0902a65f8"
   },
   {
     "url": "media/me.jpeg",
@@ -49,15 +53,15 @@ self.__precacheManifest = [
   },
   {
     "url": "package-lock.json",
-    "revision": "e136ba4842ad3e1cac8d3a6897960ae4"
+    "revision": "93a1d33b9604ad6d6cf67367ad6e9658"
   },
   {
     "url": "package.json",
-    "revision": "51f3fdbf5e73d53d93d82847d6c9bf3b"
+    "revision": "f17ce65c28af289fffd9ddb0b648e10a"
   },
   {
     "url": "rjp/index.html",
-    "revision": "989a264911b66f00806bd2ffea1d49d8"
+    "revision": "dae87912e1ff1ec2a7d90ce730e7d81a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
