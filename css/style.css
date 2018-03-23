@@ -126,7 +126,8 @@ img {
   .me {
     border-radius: 100%;
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    align-self: center; }
 
   .intro {
     grid-column: 2;
