@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "gulpfile.js",
-    "revision": "55d0f86f383993e0ed6e98c44fe95d1f"
+    "revision": "bc2afbe18d123398d20814d2182e48f9"
   },
   {
     "url": "index.html",
@@ -53,11 +53,11 @@ self.__precacheManifest = [
   },
   {
     "url": "package-lock.json",
-    "revision": "93a1d33b9604ad6d6cf67367ad6e9658"
+    "revision": "20e64aa0ddfa5dcb054a3f8e6d1c6b05"
   },
   {
     "url": "package.json",
-    "revision": "f17ce65c28af289fffd9ddb0b648e10a"
+    "revision": "1a6b702271072cab1b45c8bd08eeb8c0"
   },
   {
     "url": "rjp/index.html",

@@ -19,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5",
     "workbox-build": "^3.0.0"
   }
 }
