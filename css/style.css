@@ -9,15 +9,15 @@
   font-weight: 400;
   src: local("Source+Serif +Pro"), url(//brick.a.ssl.fastly.net/fonts/sourceserifpro/400.woff) format("woff"); }
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Cardo';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather"), url(//brick.a.ssl.fastly.net/fonts/Merriweather/700.woff) format("woff"); }
+  src: local("Cardo"), url(//brick.a.ssl.fastly.net/fonts/cardo/700.woff) format("woff"); }
 body {
   margin: 40px auto;
   max-width: 725px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 1rem;
   background-color: #ededed;
   padding: 0 10px; }
 
@@ -63,13 +63,13 @@ img {
   max-width: 100%; }
 
 .hi {
-  font-family: 'Merriweather';
-  font-size: 36px;
+  font-family: "Cardo", serif;
+  font-size: 2rem;
   text-align: center;
   white-space: wrap; }
 
 #name {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Source Serif Pro", serif;
   white-space: wrap; }
 

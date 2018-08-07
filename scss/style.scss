@@ -7,7 +7,7 @@ body {
   margin: 40px auto;
   max-width: 725px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 1rem;
   background-color: hsl(0, 0%, 93%);
   padding: 0 10px;
 }
@@ -66,8 +66,8 @@ img {
 }
 
 .hi {
-  font-family: 'Merriweather';
-  font-size: 36px;
+  font-family: $heading-stack;
+  font-size: $masthead-type;
   text-align: center;
   white-space: wrap;
 }
