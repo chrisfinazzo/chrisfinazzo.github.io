@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem 'sass', '3.5.6'
+gem 'sass', '3.7.3'
