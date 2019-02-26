@@ -1,4 +1,4 @@
-.PHONY: styles server
+.PHONY: styles server github
 
 styles:
 	sass --sourcemap=none --watch scss:css
