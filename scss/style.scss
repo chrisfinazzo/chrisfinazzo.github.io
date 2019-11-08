@@ -69,13 +69,13 @@ img {
   font-family: $heading-stack;
   font-size: $masthead-type;
   text-align: center;
-  white-space: wrap;
+  white-space: normal;
 }
 
 #name {
   font-size: $masthead-type;
   font-family: $serif-stack;
-  white-space: wrap;
+  white-space: normal;
 }
 
 #about, #skills, #criteria, #requirements, #work, #contact {

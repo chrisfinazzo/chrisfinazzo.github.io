@@ -66,12 +66,12 @@ img {
   font-family: "Cardo", serif;
   font-size: 2rem;
   text-align: center;
-  white-space: wrap; }
+  white-space: normal; }
 
 #name {
   font-size: 2rem;
   font-family: "Source Serif Pro", serif;
-  white-space: wrap; }
+  white-space: normal; }
 
 #about, #skills, #criteria, #requirements, #work, #contact {
   text-transform: capitalize; }
@@ -139,7 +139,7 @@ img {
 
   #name {
     font-size: 1.75rem;
-    white-space: wrap; }
+    white-space: normal; }
 
   #social {
     display: grid;

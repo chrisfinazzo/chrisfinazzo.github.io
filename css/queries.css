@@ -21,7 +21,7 @@
 
   #name {
     font-size: 1.75rem;
-    white-space: wrap; }
+    white-space: normal; }
 
   #social {
     display: grid;
