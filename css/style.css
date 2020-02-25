@@ -13,6 +13,18 @@
   font-style: normal;
   font-weight: 700;
   src: local("Cardo"), url(//brick.a.ssl.fastly.net/fonts/cardo/700.woff) format("woff"); }
+:root {
+  --banner-background-color: #1e73be;
+  --banner-text-color: #e9f2f9;
+  --rebeccapurple: hsl(270, 50%, 40%);
+  --masthead-type: 2rem;
+  --no-underlines: none;
+  --no-list: none;
+  --center: center;
+  --heading-stack: 'Cardo', serif;
+  --sans-stack: 'Source Sans Pro', sans-serif;
+  --serif-stack: 'Source Serif Pro', serif; }
+
 body {
   margin: 40px auto;
   max-width: 725px;
@@ -30,13 +42,13 @@ h1, h2, h3 {
   line-height: 1.2; }
 
 p {
-  font-family: "Source Serif Pro", serif; }
+  font-family: var(--serif-stack); }
 
 a:link, a:hover, a:active {
-  text-decoration: none; }
+  text-decoration: var(--no-underlines); }
 
 a:visited {
-  color: rebeccapurple; }
+  color: var(--rebeccapurple); }
 
 .fab.fa-twitter.fa-2x {
   color: #1ca0f2; }
@@ -51,7 +63,7 @@ ul {
   list-style-type: disc; }
 
 ul li {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: var(--sans-stack); }
 
 hr {
   margin-top: 20px;
@@ -63,14 +75,14 @@ img {
   max-width: 100%; }
 
 .hi {
-  font-family: "Cardo", serif;
-  font-size: 2rem;
-  text-align: center;
+  font-family: var(--heading-stack);
+  font-size: var(--masthead-type);
+  text-align: var(--center);
   white-space: normal; }
 
 #name {
-  font-size: 2rem;
-  font-family: "Source Serif Pro", serif;
+  font-size: var(--masthead-type);
+  font-family: var(--serif-stack);
   white-space: normal; }
 
 #about, #skills, #criteria, #requirements, #work, #contact {
@@ -80,12 +92,12 @@ img {
   font-weight: bold; }
 
 #mail {
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none; }
+  font-family: var(--sans-stack);
+  text-decoration: var(--no-underlines); }
 
 #rights {
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif; }
+  text-align: var(--center);
+  font-family: var(--sans-stack); }
 
 .content {
   display: grid;
@@ -104,8 +116,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 0.15rem;
-  text-align: center;
-  list-style-type: none; }
+  text-align: var(--center);
+  list-style-type: var(--no-list); }
 
 .fab.fa-github.fa-2x {
   grid-column: 1; }
@@ -145,8 +157,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
-    text-align: center;
-    list-style-type: none; }
+    text-align: var(--center);
+    list-style-type: var(--no-list); }
 
   .fab.fa-github.fa-2x {
     grid-column: 1; }

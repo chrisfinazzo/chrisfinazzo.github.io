@@ -1,7 +1,19 @@
 @charset 'utf-8';
 
 @import 'fonts';
-@import 'variables';
+
+:root {
+  --banner-background-color: #1e73be;
+  --banner-text-color: #e9f2f9;
+  --rebeccapurple: hsl(270, 50%, 40%);
+  --masthead-type: 2rem;
+  --no-underlines: none;
+  --no-list: none;
+  --center: center;
+  --heading-stack: 'Cardo', serif;
+  --sans-stack: 'Source Sans Pro', sans-serif;
+  --serif-stack: 'Source Serif Pro', serif;
+}
 
 body {
   margin: 40px auto;
@@ -23,15 +35,15 @@ h1, h2, h3 {
 }
 
 p {
-  font-family: $serif-stack;
+  font-family: var(--serif-stack);
 }
 
 a:link, a:hover, a:active {
-  text-decoration: $no-underlines;
+  text-decoration: var(--no-underlines);
 }
 
 a:visited {
-  color: $rebeccapurple;
+  color: var(--rebeccapurple);
 }
 
 .fab.fa-twitter.fa-2x {
@@ -51,7 +63,7 @@ ul {
 }
 
 ul li {
-  font-family: $sans-stack;
+  font-family: var(--sans-stack);
 }
 
 hr {
@@ -66,15 +78,15 @@ img {
 }
 
 .hi {
-  font-family: $heading-stack;
-  font-size: $masthead-type;
-  text-align: center;
+  font-family: var(--heading-stack);
+  font-size: var(--masthead-type);
+  text-align: var(--center);
   white-space: normal;
 }
 
 #name {
-  font-size: $masthead-type;
-  font-family: $serif-stack;
+  font-size: var(--masthead-type);
+  font-family: var(--serif-stack);
   white-space: normal;
 }
 
@@ -87,13 +99,13 @@ img {
 }
 
 #mail {
-  font-family: $sans-stack;
-  text-decoration: $no-underlines;
+  font-family: var(--sans-stack);
+  text-decoration: var(--no-underlines);
 }
 
 #rights {
-  text-align: center;
-  font-family: $sans-stack;
+  text-align: var(--center);
+  font-family: var(--sans-stack);
 }
 
 .content {
@@ -116,8 +128,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0.15rem;
-    text-align: center;
-    list-style-type: none;
+    text-align: var(--center);
+    list-style-type: var(--no-list);
   }
 
   .fab.fa-github.fa-2x {
