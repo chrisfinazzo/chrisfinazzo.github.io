@@ -14,8 +14,6 @@
   font-weight: 700;
   src: local("Cardo"), url(//brick.a.ssl.fastly.net/fonts/cardo/700.woff) format("woff"); }
 :root {
-  --banner-background-color: #1e73be;
-  --banner-text-color: #e9f2f9;
   --rebeccapurple: hsl(270, 50%, 40%);
   --masthead-type: 2rem;
   --no-underlines: none;
