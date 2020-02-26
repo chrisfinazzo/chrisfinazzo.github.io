@@ -38,15 +38,6 @@
   <li><a rel="me" href="https://twitter.com/chrisfinazzo"><i class="fab fa-twitter fa-2x"></i></a></li>
   </ul>
   <div id="rights">&copy; 2020 Chris Finazzo</div>
-<script>
-   if (navigator.serviceWorker) {
-     navigator.serviceWorker.register('/sw.js')
-     .then( function (registration) {
-       console.log('Success!', registration.scope);
-     })
-     .catch( function (error) {
-       console.error('Failure!', error);
-}); }
-</script>
+<script src="./loadWorker.js"></script>
 </body>
 </html>
