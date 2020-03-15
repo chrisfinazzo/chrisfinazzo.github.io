@@ -1,0 +1,33 @@
+# WWW
+[[redirects]]
+from = "/www.rjp.chrisfinazzo.com"
+to = "/rjp.chrisfinazzo.com"
+status = 301
+force = false
+# Netlify
+[[redirects]]
+from = "determined-snyder-709d78.netlify.com/re*"
+to = "https://rjp.chrisfinazzo.com/"
+status = 301
+force = false
+# 404
+[[redirects]]
+from = "*"
+to = "/404"
+status = 404
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]  
+    Cache-Control = "no-transform"
+    Content-Security-Policy-Report-Only = '''
+    default-src 'self';
+    object-src 'none';
+    img-src https:;
+    script-src 'sha384-PJow2Zsx6Qlyvm31uiIa5j+CzjSVDSQstQUmWAJpH0L+wZsSjTcSNmrn1xRgxWsC';
+    frame-ancestors 'none'; '''
+    Upgrade-Insecure-Requests = "1"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
