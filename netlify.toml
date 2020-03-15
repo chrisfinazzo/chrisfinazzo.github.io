@@ -6,7 +6,7 @@ status = 301
 force = false
 # Netlify
 [[redirects]]
-from = "determined-snyder-709d78.netlify.com/re*"
+from = "https://determined-snyder-709d78.netlify.com/*"
 to = "https://rjp.chrisfinazzo.com/"
 status = 301
 force = false
