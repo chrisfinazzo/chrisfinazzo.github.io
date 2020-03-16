@@ -21,12 +21,16 @@ status = 404
 
   [headers.values]  
     Cache-Control = "no-transform"
-    Content-Security-Policy-Report-Only = '''
+    Content-Security-Policy = '''
     default-src 'self';
-    base-uri 'self';
-    object-src 'none';
+    font-src 'self' https://brick.a.ssl.fastly.net
+    https://brick.freetls.fastly.net https://use.fontawesome.com;
     img-src https:;
+    object-src 'none';
     script-src 'sha384-PJow2Zsx6Qlyvm31uiIa5j+CzjSVDSQstQUmWAJpH0L+wZsSjTcSNmrn1xRgxWsC';
+    style-src 'self' https://brick.freetls.fastly.net https://use.fontawesome.com;
+    worker-src 'self';
+    base-uri 'self';
     form-action https://formspree.io/chris@chrisfinazzo.com;
     frame-ancestors 'none';
     report-uri https://5e6ec6f0ebe3841854b1d94c.endpoint.csper.io; '''
