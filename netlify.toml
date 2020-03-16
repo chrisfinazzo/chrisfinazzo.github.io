@@ -27,7 +27,7 @@ status = 404
     https://brick.freetls.fastly.net https://use.fontawesome.com;
     img-src https:;
     object-src 'none';
-    script-src 'sha384-PJow2Zsx6Qlyvm31uiIa5j+CzjSVDSQstQUmWAJpH0L+wZsSjTcSNmrn1xRgxWsC';
+    script-src 'sha256-UrmKjpkiZoCchL0LJairiUaUQfcu5X0N/EKx7mJKBGM=';
     style-src 'self' https://brick.freetls.fastly.net https://use.fontawesome.com;
     worker-src 'self';
     base-uri 'self';
