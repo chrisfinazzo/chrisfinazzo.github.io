@@ -26,6 +26,7 @@ status = 404
     object-src 'none';
     img-src https:;
     script-src 'sha384-PJow2Zsx6Qlyvm31uiIa5j+CzjSVDSQstQUmWAJpH0L+wZsSjTcSNmrn1xRgxWsC';
+    report-uri https://5e6ec6f0ebe3841854b1d94c.endpoint.csper.io;
     frame-ancestors 'none'; '''
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
