@@ -10,7 +10,6 @@ addEventListener('install', installEvent => {
          return staticCache.addAll([
            '/css/style.css',
            '/index.html',
-           '/rjp/index.html',
            '/media/me.jpeg',
            '/404.html',
            '/offline.html'
