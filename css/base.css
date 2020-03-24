@@ -1,0 +1,51 @@
+:root {
+  --rebeccapurple: hsl(270, 50%, 40%);
+  --banner-background-color: #1e73be;
+  --banner-text-color: #e9f2f9;
+  --no-underlines: none;
+  --no-list: none;
+  --center: center;
+  --heading-stack: 'Cardo', serif;
+  --sans-stack: 'Source Sans Pro', sans-serif;
+  --serif-stack: 'Source Serif Pro', serif; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ededed; }
+
+p {
+  font-family: var(--serif-stack); }
+
+#nameplate {
+  font-family: var(--heading-stack);
+  color: var(--banner-text-color);
+  background-color: var(--banner-background-color); }
+
+#nameplate a {
+  color: white; }
+
+#nameplate a:hover {
+  color: var(--banner-text-color); }
+
+.content {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.rjp {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+#name, #rjp {
+  font-family: var(--heading-stack); }
+
+#rjp-about, #rjp-skills, #rjp-criteria, #rjp-requirements, #rjp-work, #contact {
+  text-transform: capitalize; }
+
+#who, #what, #where {
+  font-weight: bold; }
+
+#rights {
+  font-family: var(--sans-stack); }

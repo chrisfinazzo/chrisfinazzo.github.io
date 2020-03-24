@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #323232;
+    color: rgba(255, 255, 255, 0.85); }
+
+  a, a:link, a:visited {
+    color: #419CFF;
+    text-decoration: none; }
+
+  a:hover {
+    color: #419CFF;
+    text-decoration: underline; }
+
+  .content .header {
+    border-bottom-color: rgba(255, 255, 255, 0.55); }
+
+  .content .header .siteTitle a, .content .header .siteTitle a:visited {
+    color: white; }
+
+  .content .header .siteTitle a:hover {
+    color: white;
+    text-decoration: underline; }
+
+  .post .postHeader .postTitle, .post .postHeader .postTitle:visited {
+    color: white; }
+
+  .homepage .day .daybreak {
+    color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.55); }
+
+  .content pre {
+    background-color: #0F0F0F; }
+
+  code {
+    color: white; } }
