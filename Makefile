@@ -1,4 +1,4 @@
-.PHONY: github server styles
+.PHONY: github server
 
 server:
 	python3 -m http.server 8000
