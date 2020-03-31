@@ -1,15 +1,1 @@
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source+Sans+Pro Regular"), url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/400.woff) format("woff"); }
-@font-face {
-  font-family: 'Source Serif Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source+Serif +Pro"), url(//brick.a.ssl.fastly.net/fonts/sourceserifpro/400.woff) format("woff"); }
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cardo"), url(//brick.a.ssl.fastly.net/fonts/cardo/700.woff) format("woff"); }
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&display=swap");

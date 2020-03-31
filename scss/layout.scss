@@ -23,12 +23,8 @@ h1 {
 }
 
 #rights {
+  white-space: nowrap;
   text-align: var(--center);
-}
-
-#name, #rjp {
-  text-align: var(--center);
-  white-space: normal;
 }
 
 #nameplate {
@@ -40,8 +36,10 @@ h2#title, h2#contact {
   text-align: var(--center);
 }
 
-#hi {
+.hi {
   white-space: nowrap;
+  text-align: var(--center);
+  margin-bottom: 0;
 }
 
 #social {

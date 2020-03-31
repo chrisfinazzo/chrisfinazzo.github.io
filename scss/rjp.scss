@@ -1,13 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+#rjp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  grid-row-gap: 20px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+#who {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold;
+}
+
+#what {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold;
+}
+
+#where {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul li {
+  font-family: var(--regular-stack);
+}
+
+#contact {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 form {
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-row-gap: 1rem;
   margin: 0 auto;
   padding: 1rem;
+  max-width: 550px;
 }
 
 .field {
-  box-sizing: border-box;
   grid-row: span 2;
   display: grid;
   grid-gap: inherit;

@@ -1,23 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&display=swap");
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
-  --banner-background-color: #1e73be;
+  --banner-background-color: #981e32;
   --banner-text-color: #e9f2f9;
+  --hr-separator-color: #e9e9e9;
   --no-underlines: none;
   --no-list: none;
   --center: center;
-  --heading-stack: 'Cardo', serif;
-  --sans-stack: 'Source Sans Pro', sans-serif;
-  --serif-stack: 'Source Serif Pro', serif; }
+  --left: left;
+  --heading-stack: 'Merriweather', serif;
+  --regular-stack: 'Lora', serif; }
 
 html, body {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #ededed; }
+  background-color: #ededed;
+  border-top: 3px solid #6C6F70; }
 
 p {
-  font-family: var(--serif-stack); }
+  font-family: var(--regular-stack); }
 
 #nameplate {
   font-family: var(--heading-stack);
@@ -30,56 +33,44 @@ p {
 #nameplate a:hover {
   color: var(--banner-text-color); }
 
-.content {
-  margin-left: 40px;
-  margin-right: 40px; }
+#description {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  margin-top: 0.15rem; }
 
-.rjp {
-  margin-left: 40px;
-  margin-right: 40px; }
+h2 {
+  text-align: var(--center); }
 
-#name, #rjp {
-  font-family: var(--heading-stack); }
-
-#rjp-about, #rjp-skills, #rjp-criteria, #rjp-requirements, #rjp-work, #contact {
-  text-transform: capitalize; }
-
-#who, #what, #where {
-  font-weight: bold; }
+.content, .rjp {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
 
 #rights {
-  font-family: var(--sans-stack); }
+  font-family: var(--regular-stack); }
+
+* {
+  box-sizing: border-box; }
 
 form {
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-row-gap: 1rem;
   margin: 0 auto;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 550px;
+  text-align: left; }
 
 .field {
-  box-sizing: border-box;
-  grid-row: span 2;
   display: grid;
   grid-gap: inherit;
+  grid-row: span 2;
   grid-template-rows: 4rem 1fr;
   grid-template-rows: subgrid; }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source+Sans+Pro Regular"), url(//brick.a.ssl.fastly.net/fonts/sourcesanspro/400.woff) format("woff"); }
-@font-face {
-  font-family: 'Source Serif Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source+Serif +Pro"), url(//brick.a.ssl.fastly.net/fonts/sourceserifpro/400.woff) format("woff"); }
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cardo"), url(//brick.a.ssl.fastly.net/fonts/cardo/700.woff) format("woff"); }
+#contact {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
 .content {
   display: grid;
   grid-template-columns: 1fr;
@@ -100,11 +91,8 @@ h1 {
   text-align: var(--center); }
 
 #rights {
+  white-space: nowrap;
   text-align: var(--center); }
-
-#name, #rjp {
-  text-align: var(--center);
-  white-space: normal; }
 
 #nameplate {
   text-align: var(--center);
@@ -113,8 +101,10 @@ h1 {
 h2#title, h2#contact {
   text-align: var(--center); }
 
-#hi {
-  white-space: nowrap; }
+.hi {
+  white-space: nowrap;
+  text-align: var(--center);
+  margin-bottom: 0; }
 
 #social {
   display: grid;
@@ -132,15 +122,55 @@ h2#title, h2#contact {
 .fab.fa-twitter.fa-2x {
   grid-column: 3; }
 
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  text-align: center; }
+
+#rjp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  grid-row-gap: 20px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
+#who {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold; }
+
+#what {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold; }
+
+#where {
+  font-family: var(--regular-stack);
+  font-style: italic;
+  font-weight: bold; }
+
+ul li {
+  font-family: var(--regular-stack); }
+
+#contact {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
 form {
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-row-gap: 1rem;
   margin: 0 auto;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 550px; }
 
 .field {
-  box-sizing: border-box;
   grid-row: span 2;
   display: grid;
   grid-gap: inherit;
@@ -156,25 +186,26 @@ form {
 .fab.fa-github.fa-2x {
   color: #333333; }
 
-html {
-  font: normal 100%/1.5 Times, serif; }
-
 h1, h2, h3, p, ul, hr {
   margin: 0 0 1.5rem 0; }
 
 h1 {
+  font-family: var(--heading-stack);
   font-size: 1.8020rem;
   line-height: 1.6648; }
 
 h2 {
+  font-family: var(--heading-stack);
   font-size: 1.6018rem;
   line-height: 1.8729; }
 
 h3 {
+  font-family: var(--heading-stack);
   font-size: 1.4238rem;
   line-height: 1.0535; }
 
 #rights {
+  font-family: var(--regular-stack);
   font-size: 0.8889rem;
   line-height: 1.6875; }
 
@@ -194,18 +225,19 @@ ul {
 ul li {
   font-family: var(--sans-stack); }
 
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px #000000 solid;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 0; }
-
 img {
   max-width: 100%;
   height: auto; }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #323232; }
+
+  ul > li, p, #rights, label, h1, h2, h3 {
+    color: #E9F2F9; }
+
+  .fab.fa-github.fa-2x {
+    color: #000000; } }
 @media screen and (min-width: 665px) {
   .content {
     display: grid;
@@ -224,11 +256,8 @@ img {
     grid-row: 1;
     text-align: left; }
 
-  #name {
-    white-space: normal; }
-
   #contact {
-    text-align: center; }
+    text-align: var(--center); }
 
   #social {
     display: grid;

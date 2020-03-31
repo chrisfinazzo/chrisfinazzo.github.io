@@ -18,11 +18,8 @@ h1 {
   text-align: var(--center); }
 
 #rights {
+  white-space: nowrap;
   text-align: var(--center); }
-
-#name, #rjp {
-  text-align: var(--center);
-  white-space: normal; }
 
 #nameplate {
   text-align: var(--center);
@@ -31,8 +28,10 @@ h1 {
 h2#title, h2#contact {
   text-align: var(--center); }
 
-#hi {
-  white-space: nowrap; }
+.hi {
+  white-space: nowrap;
+  text-align: var(--center);
+  margin-bottom: 0; }
 
 #social {
   display: grid;

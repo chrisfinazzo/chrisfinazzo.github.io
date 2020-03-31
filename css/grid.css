@@ -16,11 +16,8 @@
     grid-row: 1;
     text-align: left; }
 
-  #name {
-    white-space: normal; }
-
   #contact {
-    text-align: center; }
+    text-align: var(--center); }
 
   #social {
     display: grid;
