@@ -1,0 +1,14 @@
+{
+    "name": "Reverse Job Posting",
+    "short_name": "Reverse Job Posting",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=qAJvjX3Wn0",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#981e32",
+    "background_color": "#981e32",
+    "display": "standalone"
+}
