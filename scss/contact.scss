@@ -3,6 +3,7 @@
 }
 
 form {
+  font-family: var(--heading-stack);
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-row-gap: 1rem;
@@ -13,12 +14,12 @@ form {
 }
 
 .field {
+  font-family: var(--regular-stack);
   display: grid;
   grid-gap: inherit;
   grid-row: span 2;
   grid-template-rows: 4rem 1fr;
   grid-template-rows: subgrid;
-  
 }
 
 #contact {
