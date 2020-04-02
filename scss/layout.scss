@@ -36,12 +36,6 @@ h2#title, h2#contact {
   text-align: var(--center);
 }
 
-.hi {
-  white-space: nowrap;
-  text-align: var(--center);
-  margin-bottom: 0;
-}
-
 #social {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

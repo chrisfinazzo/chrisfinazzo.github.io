@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+#contact {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
 form {
   font-family: var(--heading-stack);
   display: grid;
@@ -18,7 +22,3 @@ form {
   grid-row: span 2;
   grid-template-rows: 4rem 1fr;
   grid-template-rows: subgrid; }
-
-#contact {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem; }

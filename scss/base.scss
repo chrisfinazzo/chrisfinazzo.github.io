@@ -7,8 +7,9 @@
   --no-list: none;
   --center: center;
   --left: left;
+  --masthead-stack: 'Patua One', cursive;
   --heading-stack: 'Merriweather', serif;
-  --regular-stack: 'Lora', serif;
+  --regular-stack: 'Merriweather Sans', sans-serif;
 }
 
 html, body {
@@ -26,7 +27,7 @@ p {
 }
 
 #nameplate {
-  font-family: var(--heading-stack);
+  font-family: var(--masthead-stack);
   color: var(--banner-text-color);
   background-color: var(--banner-background-color);
 }
