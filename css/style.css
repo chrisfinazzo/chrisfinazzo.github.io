@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,700;1,300&family=Merriweather:wght@300&family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400");
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
   --banner-background-color: #981e32;
@@ -162,28 +162,44 @@ h2 {
 .fab.fa-github.fa-2x {
   color: #333333; }
 
-h1, h2, h3, p, ul, hr {
-  margin: 0 0 1.5rem 0; }
+html {
+  font-size: 100%; }
+
+/*16px*/
+body {
+  background-color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333; }
+
+p {
+  margin-bottom: 1.15rem; }
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.15; }
 
 h1 {
-  font-family: var(--heading-stack);
-  font-size: 1.8020rem;
-  line-height: 1.6648; }
+  margin-top: 0;
+  font-size: 3.052em; }
 
 h2 {
-  font-family: var(--heading-stack);
-  font-size: 1.6018rem;
-  line-height: 1.8729; }
+  font-size: 2.441em; }
 
 h3 {
-  font-family: var(--heading-stack);
-  font-size: 1.4238rem;
-  line-height: 1.0535; }
+  font-size: 1.953em; }
 
-#rights {
-  font-family: var(--regular-stack);
-  font-size: 0.8889rem;
-  line-height: 1.6875; }
+h4 {
+  font-size: 1.563em; }
+
+h5 {
+  font-size: 1.25em; }
+
+small, .text_small {
+  font-size: 0.8em; }
 
 a {
   color: inherit;
