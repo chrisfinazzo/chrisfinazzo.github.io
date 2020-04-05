@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400");
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
-  --banner-background-color: #981e32;
-  --banner-text-color: #e9f2f9;
+  --banner-text-color: #333;
   --hr-separator-color: #e9e9e9;
   --no-underlines: none;
   --no-list: none;
   --center: center;
   --left: left;
-  --masthead-stack: 'Patua One', cursive;
   --heading-stack: 'Merriweather', serif;
   --regular-stack: 'Merriweather Sans', sans-serif; }
 
@@ -18,20 +16,13 @@ html, body {
 
 body {
   background-color: #ededed;
-  border-top: 3px solid #6C6F70; }
+  border-top: 3px solid gray; }
 
 p {
   font-family: var(--regular-stack); }
 
-#nameplate {
-  font-family: var(--masthead-stack);
-  color: var(--banner-text-color);
-  background-color: var(--banner-background-color); }
-
-#nameplate a {
-  color: white; }
-
-#nameplate a:hover {
+#nameplate a, #nameplate a:hover {
+  font-family: var(--heading-stack);
   color: var(--banner-text-color); }
 
 #description {
@@ -167,7 +158,7 @@ html {
 
 /*16px*/
 body {
-  background-color: white;
+  background-color: #EEE;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
   line-height: 1.65;
@@ -176,7 +167,7 @@ body {
 p {
   margin-bottom: 1.15rem; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, hr {
   margin: 2.75rem 0 1.05rem;
   font-family: 'Merriweather', serif;
   font-weight: 400;
@@ -191,12 +182,6 @@ h2 {
 
 h3 {
   font-size: 1.953em; }
-
-h4 {
-  font-size: 1.563em; }
-
-h5 {
-  font-size: 1.25em; }
 
 small, .text_small {
   font-size: 0.8em; }
