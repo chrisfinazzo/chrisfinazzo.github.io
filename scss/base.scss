@@ -1,6 +1,7 @@
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
-  --nameplate-color: #333333;
+  --banner-background-color: #981E32;
+  --banner-text-color: white;
   --hr-separator-color: #E9E9E9;
   --no-underlines: none;
   --no-list: none;
@@ -23,18 +24,26 @@ p {
   font-family: var(--regular-stack);
 }
 
-#nameplate a, #nameplate a:hover {
+header, header a:hover, header a:visited {
   font-family: var(--heading-stack);
-  color: var(--nameplate-color);
+  background-color: var(--banner-background-color);
+  color: var(--banner-text-color);
+  text-align: var(--center);
+}
+
+link a:visited {
+  color: var(--rebeccapurple);
 }
 
 #description {
   font-family: var(--regular-stack);
   margin-top: 0.15rem;
+  text-align: var(--center);
+  color: var(--banner-text-color);
 }
 
-h2 {
-  text-align: var(--center);
+#name {
+  margin: 0;
 }
 
 .content, .rjp {

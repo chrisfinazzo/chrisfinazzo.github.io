@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400");
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
-  --nameplate-color: #333333;
+  --banner-background-color: #981E32;
+  --banner-text-color: white;
   --hr-separator-color: #E9E9E9;
   --no-underlines: none;
   --no-list: none;
@@ -20,16 +21,23 @@ body {
 p {
   font-family: var(--regular-stack); }
 
-#nameplate a, #nameplate a:hover {
+header, header a:hover, header a:visited {
   font-family: var(--heading-stack);
-  color: var(--nameplate-color); }
+  background-color: var(--banner-background-color);
+  color: var(--banner-text-color);
+  text-align: var(--center); }
+
+link a:visited {
+  color: var(--rebeccapurple); }
 
 #description {
   font-family: var(--regular-stack);
-  margin-top: 0.15rem; }
+  margin-top: 0.15rem;
+  text-align: var(--center);
+  color: var(--banner-text-color); }
 
-h2 {
-  text-align: var(--center); }
+#name {
+  margin: 0; }
 
 .content, .rjp {
   margin-left: 2.5rem;
@@ -76,7 +84,7 @@ form {
 .intro {
   grid-row: 2; }
 
-h1 {
+h2 {
   text-align: var(--center); }
 
 #contact {
@@ -90,7 +98,7 @@ h1 {
   text-align: var(--center);
   white-space: normal; }
 
-h2#title, h2#contact {
+h2#contact {
   text-align: var(--center); }
 
 #social {
@@ -153,7 +161,6 @@ html {
 
 /*16px*/
 body {
-  background-color: #EEE;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
   line-height: 1.65;

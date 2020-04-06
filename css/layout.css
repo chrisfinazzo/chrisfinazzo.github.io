@@ -11,7 +11,7 @@
 .intro {
   grid-row: 2; }
 
-h1 {
+h2 {
   text-align: var(--center); }
 
 #contact {
@@ -25,7 +25,7 @@ h1 {
   text-align: var(--center);
   white-space: normal; }
 
-h2#title, h2#contact {
+h2#contact {
   text-align: var(--center); }
 
 #social {
