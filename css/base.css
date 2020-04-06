@@ -1,7 +1,7 @@
 :root {
   --rebeccapurple: hsl(270, 50%, 40%);
-  --banner-text-color: #333;
-  --hr-separator-color: #e9e9e9;
+  --nameplate-color: #333333;
+  --hr-separator-color: #E9E9E9;
   --no-underlines: none;
   --no-list: none;
   --center: center;
@@ -14,19 +14,17 @@ html, body {
   padding: 0; }
 
 body {
-  background-color: #ededed;
-  border-top: 3px solid gray; }
+  background-color: #ededed; }
 
 p {
   font-family: var(--regular-stack); }
 
 #nameplate a, #nameplate a:hover {
   font-family: var(--heading-stack);
-  color: var(--banner-text-color); }
+  color: var(--nameplate-color); }
 
 #description {
   font-family: var(--regular-stack);
-  font-style: italic;
   margin-top: 0.15rem; }
 
 h2 {
