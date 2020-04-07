@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400");
 :root {
-  --rebeccapurple: hsl(270, 50%, 40%);
+  --rebeccapurple: #663399;
   --banner-background-color: #981E32;
   --banner-text-color: white;
   --hr-separator-color: #E9E9E9;
@@ -148,7 +148,7 @@ h2 {
   font-weight: bold; }
 
 .fab.fa-twitter.fa-2x {
-  color: #1ca0f2; }
+  color: #1DA1F2; }
 
 .fab.fa-linkedin.fa-2x {
   color: #0074b3; }
