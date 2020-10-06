@@ -1,9 +1,0 @@
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #323232; }
-
-  ul > li, p, #rights, #nameplate a, #nameplate a:hover, label, h1, h2, h3 {
-    color: #E9F2F9; }
-
-  .fab.fa-github.fa-2x {
-    color: #000000; } }

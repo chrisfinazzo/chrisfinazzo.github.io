@@ -1,20 +1,21 @@
 # WWW
 [[redirects]]
-from = "/www.rjp.chrisfinazzo.com"
-to = "/rjp.chrisfinazzo.com"
+from = "/www.hirechrisfinazzo.com"
+to = "/hirechrisfinazzo.com"
 status = 301
 force = false
 # Netlify
 [[redirects]]
-from = "https://determined-snyder-709d78.netlify.com/*"
-to = "https://rjp.chrisfinazzo.com/"
+from = "/https://determined-snyder-709d78.netlify.com"
+to = "/hirechrisfinazzo.com"
 status = 301
 force = false
-# 404
+# Router
 [[redirects]]
-from = "*"
-to = "/404"
-status = 404
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
 
 [[headers]]
   for = "/*"
