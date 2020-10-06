@@ -1,6 +1,6 @@
 ## Reverse Job Posting
 
-Just a tiny little microsite, built with [React][]
+Just a tiny little microsite, built with [React][].
 
 [React]: https://reactjs.org
 
