@@ -6,11 +6,11 @@ status = 301
 force = false
 # Netlify
 [[redirects]]
-from = "/https://determined-snyder-709d78.netlify.com"
+from = "/https://gracious-babbage-21fe68.netlify.com"
 to = "/hirechrisfinazzo.com"
 status = 301
 force = false
-# Router
+# Routing
 [[redirects]]
 from = "/*"
 to = "/index.html"
