@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-snapshot";
 import Main from "./main";
-import "./index.css";
+import "./index.scss";
 
 render(
   <Main/>, 
