@@ -1,0 +1,25 @@
+a {
+  color: inherit;
+  text-decoration: var(--no-underlines);
+}
+
+a:link, a:hover, a:active {
+  text-decoration: var(--no-underlines);
+}
+
+a:visited {
+  color: var(--rebeccapurple);
+}
+
+hr {
+  color: var(--hr-separator-color)
+}
+
+ul {
+  list-style-type: disc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

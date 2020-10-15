@@ -1,0 +1,42 @@
+:root {
+  --rebeccapurple: hsl(270, 50%, 40%);
+  --banner-background-color: #1e73be;
+  --banner-text-color: #e9f2f9;
+  --no-underlines: none;
+  --no-list: none;
+  --center: center;
+  --left: left;
+  --system: -apple-system, system-ui, Verdana, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 93%);
+}
+
+header {
+  text-align: var(--center);
+}
+
+link a:visited {
+  color: var(--rebeccapurple);
+}
+
+#description {
+  margin-top: 0.15rem;
+  text-align: var(--center);
+  color: var(--banner-text-color);
+}
+
+#name {
+  margin: 0;
+}
+
+.content, .rjp {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
