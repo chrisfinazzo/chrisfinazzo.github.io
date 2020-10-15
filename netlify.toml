@@ -24,18 +24,17 @@ force = false
     Cache-Control = "no-transform"
     Content-Security-Policy-Report-Only = '''
     default-src 'self';
-    font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
+    font-src 'self' https://use.fontawesome.com;
     img-src https:;
     object-src 'none';
     script-src 'self';
-    style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com;
+    style-src 'self' https://use.fontawesome.com;
     worker-src 'self';
     base-uri 'self';
     manifest-src 'self';
     connect-src 'self';
     form-action https://formspree.io/chris@chrisfinazzo.com;
-    frame-ancestors 'none';
-    report-uri https://5e6ec6f0ebe3841854b1d94c.endpoint.csper.io; '''
+    frame-ancestors 'none'; '''
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
