@@ -19,7 +19,7 @@ class RJP extends Component {
     <li>Content Management Systems</li>
     <li>Email Production</li>
   </ul>
-  <div class="criteria">
+  <div className="criteria">
   <h3>Job Criteria</h3>
   <p><span id="who">Who:</span><span> I find that I work best in smaller teams, but I am not afraid of being part of a larger organization.</span>
   </p>
@@ -36,7 +36,7 @@ class RJP extends Component {
     <li>Provides opportunities for personal and professional growth</li>
   </ul>
   </div>
-  <div class="work">
+  <div className="work">
   <h3>Selected Work</h3>
   <p>First and foremost, I think of myself as a writer, matching words to medium in order to get the job done. Here are a few pieces I have done to illustrate my style. The first two are reaction papers from graduate courses, the last is one of the responses I wrote for my Comprehensive Exam.</p>
   <ul>
