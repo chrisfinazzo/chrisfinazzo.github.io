@@ -28,20 +28,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  text-align: var(--center);
+  align-content: var(--center);
   list-style-type: var(--no-list);
 }
   
-.fab.fa-github.fa-2x {
+svg.svg-inline--fa:nth-child(1) {
   grid-column: 1;
+  align-self: center;
 }
   
-.fab.fa-linkedin.fa-2x {
+svg.svg-inline--fa:nth-child(2) {
   grid-column: 2;
+  align-self: center;
 }
  
-.fab.fa-twitter.fa-2x {
+.svg.svg-inline--fa:nth-child(3) {
   grid-column: 3;
+  align-self: center;
 }
 
 }

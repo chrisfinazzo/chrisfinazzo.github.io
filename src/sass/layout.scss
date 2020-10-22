@@ -4,7 +4,7 @@
   grid-row-gap: 1.25rem;
 }
 
-.me {
+img {
   border-radius: 100%;
   grid-row: 1;
   margin: 0 auto;
@@ -23,7 +23,7 @@ h2 {
 }
 
 #rights {
-  white-space: nowrap;
+  white-space: normal;
   text-align: var(--center);
 }
 
@@ -46,6 +46,7 @@ h2#contact {
 
 .fab.fa-github.fa-2x {
   grid-column: 1;
+  align-self: center;
 }
   
 .fab.fa-linkedin.fa-2x {
