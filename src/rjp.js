@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
  
 class RJP extends Component {
   render() {
     return (
-  <div>
+  <div id="rjp">
   <h2>Reverse Job Posting</h2>
   <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.
   </p>
@@ -47,8 +51,16 @@ class RJP extends Component {
 <p>Programming projects - including code that runs this site - can be found on <a href="https://github.com/chrisfinazzo">GitHub</a>.</p>
 
 <p>If you're looking for a resume, it is available for download <a href="christopher-m-finazzo-resume.pdf" download>here</a>.</p>
-
 </div>
+
+<div id="social">
+<FontAwesomeIcon icon={faGithub} size="2x" />
+<FontAwesomeIcon icon={faLinkedin} size="2x" />
+<FontAwesomeIcon icon={faTwitter} size="2x" />
+</div>
+
+<p id="rights">&copy; 2020 Chris Finazzo</p>
+
 </div>
     );
   }
