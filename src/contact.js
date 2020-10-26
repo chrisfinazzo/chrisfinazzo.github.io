@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
  
 class Contact extends Component {
   render() {
@@ -12,7 +16,15 @@ class Contact extends Component {
     <textarea className="field" name="message" placeholder=""></textarea>
 <input type="submit" name="submit" value="Submit" />
 </form>
-      </div>
+
+<div id="social">
+<FontAwesomeIcon icon={faGithub} size="2x" />
+<FontAwesomeIcon icon={faLinkedin} size="2x" />
+<FontAwesomeIcon icon={faTwitter} size="2x" />
+</div>
+
+<p id="rights">&copy; 2020 Chris Finazzo</p>
+    </div>
     );
   }
 }
