@@ -35,7 +35,7 @@
     "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --style=compressed src/sass/app.scss public/css/app.css"
+    "sass": "sass --watch --style=compressed src/sass/app.scss:public/css/app.css"
   },
   "browserslist": {
     "production": [
