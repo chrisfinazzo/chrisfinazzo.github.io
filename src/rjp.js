@@ -53,14 +53,13 @@ class RJP extends Component {
 <p>If you're looking for a resume, it is available for download <a href="christopher-m-finazzo-resume.pdf" download>here</a>.</p>
 </div>
 
-<div id="social">
-<FontAwesomeIcon icon={faGithub} size="2x" />
-<FontAwesomeIcon icon={faLinkedin} size="2x" />
-<FontAwesomeIcon icon={faTwitter} size="2x" />
-</div>
+<ul id="social">
+<li><FontAwesomeIcon icon={faGithub} size="2x" /></li>
+<li><FontAwesomeIcon icon={faLinkedin} size="2x" /></li>
+<li><FontAwesomeIcon icon={faTwitter} size="2x" /></li>
+</ul>
 
 <p id="rights">&copy; 2020 Chris Finazzo</p>
-
 </div>
     );
   }
