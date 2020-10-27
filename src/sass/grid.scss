@@ -32,17 +32,17 @@
   list-style-type: var(--no-list);
 }
   
-svg.svg-inline--fa:nth-child(1) {
+.fa-github {
   grid-column: 1;
   align-self: center;
 }
   
-svg.svg-inline--fa:nth-child(2) {
+.fa-linkedin {
   grid-column: 2;
   align-self: center;
 }
  
-.svg.svg-inline--fa:nth-child(3) {
+.fa-twitter {
   grid-column: 3;
   align-self: center;
 }

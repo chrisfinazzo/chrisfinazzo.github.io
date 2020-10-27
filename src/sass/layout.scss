@@ -8,6 +8,7 @@ img {
   border-radius: 100%;
   grid-row: 1;
   margin: 0 auto;
+  align-self: var(--center);
 }
 
 .intro {
@@ -44,15 +45,17 @@ h2#contact {
   list-style-type: var(--no-list);
 }
 
-.fab.fa-github.fa-2x {
+.fa-github {
   grid-column: 1;
-  align-self: center;
+  text-align: center;
 }
   
-.fab.fa-linkedin.fa-2x {
+.fa-linkedin {
   grid-column: 2;
+  text-align: center;
 }
   
-.fab.fa-twitter.fa-2x {
+.fa-twitter {
   grid-column: 3;
+  text-align: center;
 }
