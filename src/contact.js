@@ -18,9 +18,9 @@ class Contact extends Component {
 </form>
 
 <ul id="social">
-<li><FontAwesomeIcon icon={faGithub} size="2x" /></li>
-<li><FontAwesomeIcon icon={faLinkedin} size="2x" /></li>
-<li><FontAwesomeIcon icon={faTwitter} size="2x" /></li>
+<li><a href="https://github.com/chrisfinazzo"><FontAwesomeIcon icon={faGithub} size="2x" /></a></li>
+<li><a href="https://www.linkedin.com/in/chrisfinazzo"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></li>
+<li><a href="https://twitter.com/chrisfinazzo"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
 </ul>
 
 <p id="rights">&copy; 2020 Chris Finazzo</p>
