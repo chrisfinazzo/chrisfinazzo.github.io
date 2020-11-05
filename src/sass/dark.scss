@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
+  
   body {
-    background-color: #323232;
+    background-color: hsl(214.4, 30%, 15%);
   }
   
   ul > li, p, #rights, #nameplate a, #nameplate a:hover, label, h1, h2, h3 {
@@ -10,4 +11,5 @@
   .fa-github {
     color: #000000;
   }
+  
 }
