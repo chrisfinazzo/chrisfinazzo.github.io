@@ -1,19 +1,19 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import {
   Link
 } from 'react-router-dom';
+import Social from "./components/social"
+import Rights from "./components/rights";
 
 class RJP extends Component {
   render() {
     return (
   <div id="rjp">
+  <div id="nameplate">
   <h2>Reverse Job Posting</h2>
-  <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.
-  </p>
+    <p>What I Can Do for You</p>
+  </div>
+    <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.</p> 
   <h3>Skills</h3>
   <p>I pride myself on being able to take a message and transform it into whatever form is most appropriate for its intended audience. Given my background and skills, this usually involves web technologies in some form, but I am equally comfortable with social media and print distribution.
   </p>
@@ -56,13 +56,9 @@ class RJP extends Component {
 <p>If you're looking for a resume, it is available for download <a href="christopher-m-finazzo-resume.pdf" download>here</a>.</p>
 </div>
 
-<ul id="social">
-<li><a href="https://github.com/chrisfinazzo"><FontAwesomeIcon icon={faGithub} size="2x" /></a></li>
-<li><a href="https://www.linkedin.com/in/chrisfinazzo"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></li>
-<li><a href="https://twitter.com/chrisfinazzo"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
-</ul>
+<Social />
+<Rights />
 
-<p id="rights">&copy; 2020 Chris Finazzo</p>
 </div>
     );
   }

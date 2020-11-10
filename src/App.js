@@ -6,6 +6,9 @@ import {
 import About from "./about";
 import RJP from "./rjp";
 import Contact from "./contact";
+import Header from "./components/header";
+import Social from "./components/social";
+import Rights from "./components/rights";
 
 class App extends Component {
   render() {
