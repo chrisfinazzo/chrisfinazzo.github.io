@@ -1,12 +1,10 @@
 import React from "react";
 
-const Header = () => {
-
-<div id="nameplate">
-  <h2>Reverse Job Posting</h2>
-    <p>What I Can Do for You</p>
-    <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.</p>
-</div>
-}
+const Header = () => (
+<header>
+  <h2><a href="/">Chris Finazzo</a></h2>
+  <p>One part writer, one part technologist</p>
+</header>
+)
 
 export default Header;
