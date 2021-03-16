@@ -3,7 +3,7 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
-import About from "./about";
+import Home from "./home";
 import RJP from "./rjp";
 import Contact from "./contact";
 import Header from "./components/header";
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-            <Route exact path="/" component={About}/>
+            <Route exact path="/" component={Home}/>
             <Route path="/rjp" component={RJP}/>
             <Route path="/contact" component={Contact}/>
       </HashRouter>
