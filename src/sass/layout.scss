@@ -15,8 +15,9 @@ img {
   grid-row: 2;
 }
 
-h2 {
-  text-align: var(--center);
+.content, .rjp {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 #contact {
@@ -25,15 +26,6 @@ h2 {
 
 #rights {
   white-space: normal;
-  text-align: var(--center);
-}
-
-#nameplate {
-  text-align: var(--center);
-  white-space: normal;
-}
-
-h2#contact {
   text-align: var(--center);
 }
 
@@ -47,15 +39,15 @@ h2#contact {
 
 .fa-github {
   grid-column: 1;
-  text-align: center;
+  text-align: var(--center);
 }
   
 .fa-linkedin {
   grid-column: 2;
-  text-align: center;
+  text-align: var(--center);
 }
   
 .fa-twitter {
   grid-column: 3;
-  text-align: center;
+  text-align: var(--center);
 }

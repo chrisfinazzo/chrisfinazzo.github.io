@@ -8,18 +8,18 @@
 }
 
 form {
-  font-family: var(--heading-stack);
+  font-family: var(--system);
   display: grid;
   grid-template-rows: max-content 1fr;
   grid-row-gap: 1rem;
   margin: 0 auto;
   padding: 1rem;
   max-width: 550px;
-  text-align: left;
+  text-align: var(--left);
 }
 
 .field {
-  font-family: var(--regular-stack);
+  font-family: var(--system);
   display: grid;
   grid-gap: inherit;
   grid-row: span 2;

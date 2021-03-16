@@ -1,18 +1,10 @@
-a {
-  color: inherit;
+a:link {
   text-decoration: var(--no-underlines);
+  color: black;
 }
 
-a:link, a:hover, a:active {
-  text-decoration: var(--no-underlines);
-}
-
-a:visited {
+a:hover {
   color: var(--rebeccapurple);
-}
-
-hr {
-  color: var(--hr-separator-color)
 }
 
 ul {

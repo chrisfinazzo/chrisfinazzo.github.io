@@ -1,7 +1,8 @@
 :root {
-  --rebeccapurple: hsl(270, 50%, 40%);
-  --banner-background-color: #1e73be;
-  --banner-text-color: #e9f2f9;
+  --rebeccapurple: #663399;
+  --background-color:  #EEEEEE;
+  --banner-background-color: #597AA6;
+  --banner-text-color: #FFFFFF;
   --no-underlines: none;
   --no-list: none;
   --center: center;
@@ -15,30 +16,28 @@ html, body {
 }
 
 body {
-  background-color: hsl(0, 0%, 93%);
+  background-color: var(--background-color);
   font-family: var(--system);
   line-height: 1.6;
 }
 
 header {
   text-align: var(--center);
-}
-
-link a:visited {
-  color: var(--rebeccapurple);
-}
-
-#description {
-  margin-top: 0.15rem;
-  text-align: var(--center);
+  width: 100%;
+  background-color: var(--banner-background-color);
   color: var(--banner-text-color);
 }
 
-#name {
-  margin: 0;
+h2 {
+  margin-top: 0;
+  text-align: var(--center);
 }
 
-.content, .rjp {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+h2 a {
+  color: inherit;
+  text-decoration: var(--no-underlines);
+}
+
+h2 + p {
+  text-align: var(--center);
 }
