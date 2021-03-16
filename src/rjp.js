@@ -2,17 +2,16 @@ import React, { Component } from "react";
 import {
   Link
 } from 'react-router-dom';
+import Header from "./components/header";
 import Social from "./components/social"
 import Rights from "./components/rights";
 
 class RJP extends Component {
   render() {
     return (
-  <div id="rjp">
-  <div id="nameplate">
-  <h2>Reverse Job Posting</h2>
-    <p>What I Can Do for You</p>
-  </div>
+  <React.Fragment>
+  <Header />
+  <div className="skills">
     <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.</p> 
   <h3>Skills</h3>
   <p>I pride myself on being able to take a message and transform it into whatever form is most appropriate for its intended audience. Given my background and skills, this usually involves web technologies in some form, but I am equally comfortable with social media and print distribution.
@@ -26,6 +25,7 @@ class RJP extends Component {
     <li>Content Management Systems</li>
     <li>Email Production</li>
   </ul>
+  </div>
   <div className="criteria">
   <h3>Job Criteria</h3>
   <p><span id="who">Who:</span><span> I find that I work best in smaller teams, but I am not afraid of being part of a larger organization.</span>
@@ -55,11 +55,9 @@ class RJP extends Component {
 
 <p>If you're looking for a resume, it is available for download <a href="christopher-m-finazzo-resume.pdf" download>here</a>.</p>
 </div>
-
 <Social />
 <Rights />
-
-</div>
+</React.Fragment>
     );
   }
 }
