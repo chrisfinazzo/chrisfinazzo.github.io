@@ -11,8 +11,9 @@ class RJP extends Component {
     return (
   <React.Fragment>
   <Header />
+  <h2>How I Can Help You</h2>
   <div className="skills">
-    <p>From understanding expectations, to message creation, to delivery, I can help you reach an audience wherever they happen to be.</p> 
+    <p>From understanding expectations, to message creation, to delivery, I will help you reach an audience wherever they happen to be.</p> 
   <h3>Skills</h3>
   <p>I pride myself on being able to take a message and transform it into whatever form is most appropriate for its intended audience. Given my background and skills, this usually involves web technologies in some form, but I am equally comfortable with social media and print distribution.
   </p>
