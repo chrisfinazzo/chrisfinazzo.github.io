@@ -25,7 +25,6 @@
     "netlify-plugin-csp-generator": "^1.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-snap": "^1.23.0",
