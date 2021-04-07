@@ -20,13 +20,13 @@ force = false
 [[plugins]]
 package = "netlify-plugin-csp-generator"
   [plugins.inputs]
-  buildDir = "build" 
+  buildDir = "build"
+  reportOnly = true 
   [plugins.inputs.policies]
     defaultSrc = "'self'"
     fontSrc = "'self'"
-    scriptSrc = "'self'"
     imgSrc = "'https:'"
-    styleSrc = "'sha256-z7aJVDo0vez3DpVN97FhKIjWiUKc2AM+2s400f0kEdk= https://use.fontawesome.com;'"
+    styleSrc = "'PyUkwePEiCLvmEoFP/CJwgoN8RD9bh4iFRGiA+SojkY= https://use.fontawesome.com;'"
     connectSrc = "'self'"
     formAction = "'https://formspree.io/f/xgerekvv'"
     frameAncestors = "'none'"
