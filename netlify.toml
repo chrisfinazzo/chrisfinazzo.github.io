@@ -16,25 +16,29 @@ from = "/*"
 to = "/index.html"
 status = 200
 force = false
+# Plugins
+[[plugins]]
+package = "netlify-plugin-csp-generator"
+  [plugins.inputs]
+  buildDir = "build" 
+  [plugins.inputs.policies]
+    defaultSrc = "'self'"
+    fontSrc = "'self'"
+    imgSrc = "'https:'"
+    styleSrc = "'self https://use.fontawesome.com;'"
+    connectSrc = "'self'"
+    formAction = "'https://formspree.io/f/xgerekvv'"
+    frameAncestors = "'none'"
+    workerSrc = "'self'"
 
 [[headers]]
   for = "/*"
-
   [headers.values]  
-    Cache-Control = "no-transform"
-    Content-Security-Policy-Report-Only = '''
-    default-src 'self';
-    font-src 'self' https://use.fontawesome.com;
-    img-src https:;
-    object-src 'none';
-    script-src 'self';
-    style-src 'sha256-z7aJVDo0vez3DpVN97FhKIjWiUKc2AM+2s400f0kEdk=' https://use.fontawesome.com;
-    worker-src 'self';
-    base-uri 'self';
-    manifest-src 'self';
-    connect-src 'self';
-    form-action https://formspree.io/chris@chrisfinazzo.com;
-    frame-ancestors 'none'; '''
+    cache-control = '''
+    max-age=0,
+    public,
+    must-revalidate,
+    no-transform'''
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
