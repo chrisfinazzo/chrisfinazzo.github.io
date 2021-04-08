@@ -43,8 +43,9 @@ package = "netlify-plugin-csp-generator"
     public,
     must-revalidate,
     no-transform'''
-    Reporting-Endpoints = csp-violation-reporter=\"https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"\
+    Reporting-Endpoints = "https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+
