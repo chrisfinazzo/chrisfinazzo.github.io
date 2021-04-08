@@ -21,12 +21,15 @@ force = false
 package = "netlify-plugin-csp-generator"
   [plugins.inputs]
   buildDir = "build"
-  reportOnly = true 
+  reportURI = "https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"
+  reportTo = "csp-violation-reporter"
+  reportOnly = true
   [plugins.inputs.policies]
     defaultSrc = "'self'"
     fontSrc = "'self'"
     imgSrc = "'https:'"
-    styleSrc = "'PyUkwePEiCLvmEoFP/CJwgoN8RD9bh4iFRGiA+SojkY= https://use.fontawesome.com;'"
+    styleSrc = "'self' 'https://use.fontawesome.com;'"
+    scriptSrc = "'self'"
     connectSrc = "'self'"
     formAction = "'https://formspree.io/f/xgerekvv'"
     frameAncestors = "'none'"
@@ -40,6 +43,7 @@ package = "netlify-plugin-csp-generator"
     public,
     must-revalidate,
     no-transform'''
+    Reporting-Endpoints = csp-violation-reporter=\"https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"\
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
