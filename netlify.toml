@@ -21,9 +21,6 @@ force = false
 package = "netlify-plugin-csp-generator"
   [plugins.inputs]
   buildDir = "build"
-  reportURI = "https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"
-  reportTo = "csp-violation-reporter"
-  reportOnly = true
   [plugins.inputs.policies]
     defaultSrc = "'self'"
     fontSrc = "'self'"
@@ -43,7 +40,6 @@ package = "netlify-plugin-csp-generator"
     public,
     must-revalidate,
     no-transform'''
-    Reporting-Endpoints = "https://chrisfinazzo.report-uri.com/r/d/csp/reportOnly"
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
