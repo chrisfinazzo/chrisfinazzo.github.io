@@ -1,11 +1,13 @@
 import React, { Component, lazy, Suspense } from "react";
 import {
   Route,
+  Switch,
   HashRouter
 } from "react-router-dom";
 const Home = React.lazy(() => import("./home"));
 const RJP = React.lazy(() => import("./rjp"));
 const Contact = React.lazy(() => import("./contact"));
+const NotFound = React.lazy(() => import("./404"));
 
 const renderLoader = () => <p>Loading...</p>;
 
@@ -17,11 +19,14 @@ class App extends Component {
   render() {
     return (
       <Suspense fallback={renderLoader()}>
-      <HashRouter>
+        <HashRouter>
+          <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/rjp" component={RJP}/>
-            <Route path="/contact" component={Contact}/>
-      </HashRouter>
+            <Route exact path="/rjp" component={RJP}/>
+            <Route exact path="/contact" component={Contact}/>
+            <Route component={NotFound}/>
+          </Switch>
+        </HashRouter>
       </Suspense>
     );
   }
