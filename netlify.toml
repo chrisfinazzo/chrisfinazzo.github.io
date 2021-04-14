@@ -28,6 +28,7 @@ package = "netlify-plugin-csp-generator"
     styleSrc = "'self' https://use.fontawesome.com"
     scriptSrc = "'self'"
     connectSrc = "'self'"
+    objectSrc = "'none'"
     formAction = "https://formspree.io/f/xgerekvv"
     frameAncestors = "'none'"
     workerSrc = "'self'"
@@ -36,9 +37,6 @@ package = "netlify-plugin-csp-generator"
   for = "/*"
   [headers.values]  
     cache-control = '''
-    max-age=0,
-    public,
-    must-revalidate,
     no-transform'''
     Upgrade-Insecure-Requests = "1"
     X-Content-Type-Options = "nosniff"
