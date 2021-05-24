@@ -39,6 +39,7 @@ package = "netlify-plugin-csp-generator"
     cache-control = '''
     no-transform'''
     Upgrade-Insecure-Requests = "1"
+    Referrer-Policy = "same-origin"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
