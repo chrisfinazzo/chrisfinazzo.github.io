@@ -22,7 +22,7 @@ package = "netlify-plugin-csp-generator"
   [plugins.inputs]
   buildDir = "build"
   [plugins.inputs.policies]
-    defaultSrc = "'self'"
+    defaultSrc = "'none'"
     fontSrc = "'self'"
     imgSrc = "'self'"
     styleSrc = "'self' https://use.fontawesome.com"
