@@ -9,6 +9,8 @@ img {
   grid-row: 1;
   margin: 0 auto;
   align-self: var(--center);
+  max-width: 100%;
+  height: auto;
 }
 
 .intro {
