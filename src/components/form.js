@@ -21,7 +21,7 @@ function Form() {
       <label htmlFor="message">Message:</label>
       <textarea className="field" name="message" placeholder="" required></textarea>
       <ValidationError field="email" prefix="Email" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>Sign up</button>
+      <button type="submit" disabled={state.submitting}>Submit</button>
     </form>
   )
 }
