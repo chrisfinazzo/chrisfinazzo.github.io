@@ -1,14 +1,36 @@
-import React from "react";
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
-const Form = () => (
-<form action="https://formspree.io/f/xgerekvv" method="POST">
-  <h2 id="contact">Contact Me</h2>
-  <label htmlFor="fname">First Name</label><input type="text" className="field" name="firstname" placeholder="John" />
-<label htmlFor="lname">Last Name</label><input type="text" className="field" name="lastname" placeholder="Smith" />
-<label htmlFor="email">Email</label><input type="text" className="field" name="_replyto" placeholder="john.smith@example.com" /><label htmlFor="message">Message</label>
-    <textarea className="field" name="message" placeholder=""></textarea>
-<input type="submit" name="submit" value="Submit" />
-</form>
-)
+function Form() {
+  const [state, handleSubmit] = useForm("xgerekvv");
+  if (state.succeeded) {
+      return <p>Thanks for the feedback!</p>;
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <h2 id="contact">Contact Me</h2>
+      <label htmlFor="fname">First Name:</label>
+      <input type="text" className="field" name="firstname" placeholder="John" required />
+      <ValidationError field="email" prefix="Email" errors={state.errors} />
+      <label htmlFor="lname">Last Name:</label>
+      <input type="text" className="field" name="lastname" placeholder="Smith" required />
+      <ValidationError field="email" prefix="Email" errors={state.errors} />
+      <label htmlFor="email">Email Address:</label>
+      <input type="email" className="field" name="email" placeholder="john.smith@example.com" required />
+      <ValidationError field="email" prefix="Email" errors={state.errors} />
+      <label htmlFor="message">Message:</label>
+      <textarea className="field" name="message" placeholder="" required></textarea>
+      <ValidationError field="email" prefix="Email" errors={state.errors} />
+      <button type="submit" disabled={state.submitting}>Sign up</button>
+    </form>
+  )
+}
 
+function App() {
+  return (
+    <Form />
+  );
+}
 export default Form;
+
+
