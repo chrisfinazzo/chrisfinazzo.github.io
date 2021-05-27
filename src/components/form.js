@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function Form() {
   const [state, handleSubmit] = useForm("xgerekvv");
   if (state.succeeded) {
-      return <p>Thanks for the feedback!</p>;
+      return <p style="text-align: center">Thanks for the feedback!</p>;
   }
   return (
     <form onSubmit={handleSubmit}>
