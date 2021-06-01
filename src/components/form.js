@@ -1,36 +1,38 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React from "react";
 
-function Form() {
-  const [state, handleSubmit] = useForm("xgerekvv");
-  if (state.succeeded) {
-      return <p style="text-align: center">Thanks for the feedback!</p>;
-  }
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2 id="contact">Contact Me</h2>
-      <label htmlFor="fname">First Name:</label>
-      <input type="text" className="field" name="firstname" placeholder="John" required />
-      <ValidationError field="email" prefix="Email" errors={state.errors} />
-      <label htmlFor="lname">Last Name:</label>
-      <input type="text" className="field" name="lastname" placeholder="Smith" required />
-      <ValidationError field="email" prefix="Email" errors={state.errors} />
-      <label htmlFor="email">Email Address:</label>
-      <input type="email" className="field" name="email" placeholder="john.smith@example.com" required />
-      <ValidationError field="email" prefix="Email" errors={state.errors} />
-      <label htmlFor="message">Message:</label>
-      <textarea className="field" name="message" placeholder="" required></textarea>
-      <ValidationError field="email" prefix="Email" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>Submit</button>
-    </form>
-  )
-}
+const Form = () => (
+<form name="contact" method="post" data-netlify="true" onSubmit="submit">
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <div>
+    <label htmlFor="first-name">First Name:<br />
+      <input type="text" id="first-name" name="first-name" required />
+    </label>
+  </div>
+  
+  <div>
+    <label htmlFor="last-name">Last Name:<br />
+      <input type="text" id="last-name" name="last-name" required />
+    </label>
+  </div>
+  
+  <div>
+    <label htmlFor="email">Email:<br />
+      <input type="email" id="email" name="email" required />
+    </label>
+  </div>
+  
+  <div>
+    <label htmlFor="message">Message:<br />
+      <textarea id="message" name="message" required></textarea>
+    </label>
+  </div>
+  
+  <div>
+    <button type="submit">Submit</button>
+  </div>
 
-function App() {
-  return (
-    <Form />
-  );
-}
+</form>
+)
+
 export default Form;
-
-
