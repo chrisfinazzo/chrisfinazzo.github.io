@@ -1,7 +1,7 @@
 import React from "react";
 
 const Form = () => (
-<form name="contact" method="post" data-netlify="true" onSubmit="submit">
+<form name="contact" netlify method="post" onSubmit="submit">
   <input type="hidden" name="form-name" value="contact" />
   
   <div>
