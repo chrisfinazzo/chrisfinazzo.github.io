@@ -32,8 +32,8 @@ const Form = () => (
     <button type="submit">Submit</button>
   </div>
   
-  <div class="hidden">
-    <label>No robots allowed!<input name="bot-field" /></label>
+  <div>
+    <label>No robots allowed!<input name="bot-field" hidden /></label>
   </div>
 
 </form>
