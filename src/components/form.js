@@ -33,7 +33,7 @@ const Form = () => (
   </div>
   
   <div>
-    <label>No robots allowed!<input name="bot-field" hidden /></label>
+    <label><input name="bot-field" hidden /></label>
   </div>
 
 </form>
