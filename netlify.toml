@@ -32,6 +32,7 @@ package = "netlify-plugin-csp-generator"
     objectSrc = "'none'"
     formAction = "'self'"
     frameAncestors = "'none'"
+    reportUri = "https://chrisfinazzo.report-uri.com/r/d/csp/enforce"
     workerSrc = "'self'"
 
 [[headers]]
