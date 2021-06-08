@@ -5,13 +5,14 @@ import {
 import Header from "./components/header";
 import Social from "./components/social";
 import Rights from "./components/rights";
+import Thanks from "./components/thanks";
  
 class Success extends Component {
   render() {
     return (
     <div>
       <Header />
-      <p>Thanks for your submission!</p>
+      <Thanks />
       <Social />
       <Rights />
     </div>
@@ -19,4 +20,4 @@ class Success extends Component {
   }
 }
  
-export default Sucess;
+export default Success;
