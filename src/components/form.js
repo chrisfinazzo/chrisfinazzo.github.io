@@ -5,37 +5,23 @@ const Form = () => (
   <input type="hidden" name="form-name" value="contact" />
   <h2 id="contact">Contact Me</h2>
   <div>
-    <label htmlFor="first-name">First Name:<br />
-      <input type="text" id="first-name" name="first-name" placeholder="John" required />
-    </label>
-  </div>
-  
-  <div>
-    <label htmlFor="last-name">Last Name:<br />
-      <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
-    </label>
-  </div>
-  
-  <div>
-    <label htmlFor="email">Email:<br />
-      <input type="email" id="email" name="email" placeholder="john.smith@example.com" required />
-    </label>
-  </div>
-  
-  <div>
-    <label htmlFor="message">Message:<br />
-      <textarea id="message" name="message" rows="7" required></textarea>
-    </label>
-  </div>
-  
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-  
-  <div>
-    <label><input name="bot-field" hidden /></label>
+    <label for="name">Name:&nbsp;</label>
+    <input type="text" id="name" name="user_name" />
   </div>
 
+  <div>
+    <label for="mail">E-mail:&nbsp;</label>
+    <input type="email" id="mail" name="user_email" />
+  </div>
+
+  <div>
+    <label for="msg">Message:&nbsp;</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+
+  <div class="button">
+    <button type="submit">Submit</button>
+  </div>
 </form>
 )
 

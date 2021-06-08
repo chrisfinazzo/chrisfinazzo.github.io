@@ -1,28 +1,39 @@
-* {
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  width: 300px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-#contact {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+input:focus, textarea:focus {
+  border-color: #000;
 }
 
-form {
-  font-family: var(--system);
-  display: grid;
-  grid-template-rows: max-content 1fr;
-  grid-row-gap: 1rem;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 550px;
-  text-align: var(--left);
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
 }
 
-.field {
-  font-family: var(--system);
-  display: grid;
-  grid-gap: inherit;
-  grid-row: span 2;
-  grid-template-rows: 4rem 1fr;
-  grid-template-rows: subgrid; // Firefox only
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
 }
