@@ -1,33 +1,28 @@
 import React from "react";
 
 const Form = () => (
-<form name="contact" data-netlify="true" netlify-honeypot="bot-field" method="post" onSubmit="submit" action="/success">
+<React.Fragment>
+<h2>Contact Me</h2>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" method="POST" onSubmit="submit" action="/success">
   <input type="hidden" name="form-name" value="contact" />
-  <h2 id="contact">Contact Me</h2>
-  <div>
-    <label for="name">Name:&nbsp;</label>
-    <input type="text" id="name" name="user_name" placeholder="John Smith" required />
-  </div>
+  <label for="firstName" className="first-name">First Name</label>
+  <input id="firstName" name="firstName" type="text" required />
 
-  <div>
-    <label for="mail">E-mail:&nbsp;</label>
-    <input type="email" id="mail" name="user_email" placeholder="john.smith@example.com" required />
-  </div>
+  <label for="lastName" className="last-name">Last Name</label>
+  <input id="lastName" name="lastName" type="text" required />
 
-  <div>
-    <label for="msg">Message:&nbsp;</label>
-    <textarea id="msg" name="user_message" required></textarea>
-  </div>
-
-  <div class="button">
-    <button type="submit">Submit</button>
-  </div>
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required />
   
-  <div>
-    <label><input name="bot-field" hidden /></label>
-  </div>
+  <label for="message">Message</label>
+  <textarea id="msg" name="message" required></textarea>
+
+  <label><input name="bot-field" hidden /></label>
+
+  <button type="submit">Submit</button>
   
 </form>
+</React.Fragment>
 )
 
 export default Form;

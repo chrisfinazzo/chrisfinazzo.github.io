@@ -1,39 +1,55 @@
 form {
-  margin: 0 auto;
-  width: 400px;
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
   padding: 1em;
 }
 
-div + div {
-  margin-top: 1em;
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+
+form button:hover {
+  background: gold;
 }
 
 label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
+  padding: 0.5em 0.5em 0.5em 0;
 }
 
-input, textarea {
-  width: 300px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
 }
 
-input:focus, textarea:focus {
-  border-color: #000;
+input:focus {
+  outline: 3px solid gold;
 }
 
-textarea {
-  vertical-align: top;
-  height: 5em;
-  resize: vertical;
-}
+@media screen and (min-width: 665px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
 
-.button {
-  padding-left: 90px;
-}
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
 
-button {
-  margin-left: .5em;
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
 }
